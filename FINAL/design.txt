@@ -1,0 +1,89 @@
+1. Pygame
+   
+   Pysics uses pygame. I used pygame because there was physics involved in my game
+   which is hard to implement in Tkinter. Also, pygame has better graphics and 
+   it has the ability to import images and audio files.
+
+   I also figured out there was built in collision detection in pygame, which I intended to use before I made
+   my game. But I couldn't figure out how to use it. As they say, everything happens for the better.
+
+   (http://www.pygame.org/docs/ref/sprite.html) --> the ready made collision detection
+
+   Using pygame was hard. It is because the code is different from Tkinter.
+   For example, it uses pygame.draw.rect or pygame.draw.circle instead of 
+   canvas.create_rectangle. Also, the co-ordinate system is hard in pygame.
+   Instead of canvas, there is screen which is difficult to understand. I took a 
+   while to learn pygame and I had to constantly google commands.
+
+   The most difficult part of using pygame, though, was how the program runs.
+   In Tkinter, there is simply functions we can write and end with root.mainloop().
+   In contrary, pygame has the whole program in a while loop which keeps on running 
+   until the border condition is met. It's really hard to code in this way, especially
+   when you want to switch modes or screens in the main menu because you need to 
+   introduce more while loops and keep updating the screen with pygame.display.flip().
+
+
+2. Physics
+
+   The physics used in the game is pretty sophesticated in my opinion. The different aspects
+   of physics this game uses are -
+   i) mass
+   ii) momentum
+   iii) vectors
+   iv) gravity
+    v) elasticity
+   vi) collisions with coefficient of restitution
+   vii) conservation of momentum
+
+   The physics would have been extremely difficult without the math module. The math module made
+   the trigonometry really easy. The challenging part in the physics, though, was the flipped
+   y co-ordinate in python. Thus, the newton's formulae of motion flipped in terms of sin and cos.
+
+
+   Collision Detection - I used the fact that if the sizes (radii in case of circles and half of length
+   in case of squares) is more than the distance between the mid points of the shapes by distance 
+   formula ( sqrt(x^2 + y^2) ), then the collision will occur. It's because the minimum distance between
+   two objects would be the sum of their individual sizes.
+   
+   The addition of vectors - It was a bit confusing because of the changed angles due to the flipped 
+   co-ordinates and trigonometric functions. So, in order to find the resulting angles, I had to
+   find the arctan of cot instead of arctan of tan and the subtract it from pi/2 to get the answer. 
+   It was really frustrating.
+
+   Mass - I used mass as a function of size in my physics, mass = size^2 to be precise, since it's a 
+   2D model and mass is proportional to volume. 
+
+   Momentum - I use mass in my collision using the collision formulae taught in physics.
+   v1 = (m1-m2)u1/(m1+m2) + 2m2u2/(m1+m2)
+   The resulting velocities is added vectorially then. It also depends on elasticity. If the elasticity is 1,
+   the collisions are perfectly elastic (as in the case in the obstruction shapes in level 2).
+
+   Bounce - Bouncing is pretty much like collision, but easier because the boundaries are fixed.
+
+   Avoiding overlap - I tried overlapping by multiplying a factor of how much there's a difference between
+   the individual sizes of the shapes and the distance between the centres of the shape.
+
+3. GAME UI AND MENU
+
+   This was perhaps the hardest part. Since everything in pygame is in a while loop, I had to introduce
+   multiple while loops with booleans in order to skip from one screen to the other (for example -
+   restart game, game --> main menu, main menu --> game etc). This part probably took more than half of
+   my time in the project.
+
+
+4. FAILED ATTEMPTS
+
+   I also tried to introduce lines and freely drawn bodies in my physics but the collisions
+   were so difficult (in fact, I couldn't do anything), that I dropped the idea. I had the code for drawing
+   lines and free bodies, but I discarded them because there was no physics.
+
+   I tried to convert my pygame file to executable via py2exe but I failed really badly. So I dropped the idea.
+
+
+  
+
+
+
+
+
+

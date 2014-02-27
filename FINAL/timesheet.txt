@@ -1,0 +1,12 @@
+
+1. Learn Pygame = 10 hours
+ 
+2. Make Complete Physics = 15 hours
+
+3. Making the game = 10 hours
+
+4. Making the UI = 40 hours
+
+5. On things that didn't show up (lines and free made shapes and py2exe) = 10
+
+TOTAL = 10 + 30 + 15 + 40 = 85 hours

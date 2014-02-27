@@ -1,0 +1,35 @@
+Some very important sources in my project-
+
+1. Yuyang. Her input is invaluable.
+
+2. thenewboston youtube videos for python. They are great.
+   
+   (http://www.youtube.com/playlist?list=PL8E21BDD0981FDF66&feature=playlist-comment)
+
+3. www.pygame.org
+  
+   (many commands I didn't know came from the source pages)
+
+4. www.petercollingridge.uk
+  (it has a really good pygame tutorial with physics which I took ideas from)
+
+5. http://www.flickr.com/photos/schamka/2647265848/
+   
+   (The background image)
+
+6. Bachelors of Science 
+   
+   (sound track)
+
+7. Collision Detection
+
+   (http://www.switchonthecode.com/tutorials/collision-detection-with-pygame)
+   
+   Took the idea from the theory and the image shown. DID NOT USE THEIR CODE. 
+   You can check by comparing the codes.
+
+8. Some guy during lecture who gave me the idea of using mass.
+
+9. Prof Kosbie.
+
+   (For giving us the assignment :P)
